@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'NexaL';
+    src: url('assets/Nexa Light.otf') format('truetype');
+}
+
+body {
+    font-family: 'NexaL', Arial, sans-serif;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 98.4vh;
+    background-image: linear-gradient(to bottom, #99d4f9, #C7E8FF);
+}
+
+.container {
+    margin-top: -50px;
+    text-align: center;
+    background-image: url('assets/background.jpg'), linear-gradient(to bottom right, #a1cbff, #6ca4ff);
+    background-size: cover; 
+    background-blend-mode: overlay;
+    background-position: center; 
+    border-radius: 60px;
+    padding: 50px; 
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    width: 60%;
+    height: auto; 
+    animation: logoAnimation 2s infinite;
+}
+
+@keyframes logoAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+p {
+    font-size: 24px;
+    color: #3f4e62;
+}
+
+.links {
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.links a {
+    font-family: 'NexaL', Arial, sans-serif;
+    font-size: 18px; 
+    color: #fff; 
+    text-decoration: none; 
+    margin: 0 10px;
+    border: 2px solid #fff; 
+    padding: 10px 20px; 
+    border-radius: 100px;
+    background-color: transparent; 
+    cursor: pointer; 
+    transition: all 0.3s ease;
+}
+
+.links a:hover {
+    background-color: #fff; 
+    color: #3f4e62; 
+    border: 2px solid #396480; 
+}
+
+@media (max-width: 430px) {
+    .logo {
+        width: 100%;
+        height: auto;
+    }
+    .links {
+        margin-top: 35px;
+        margin-bottom: 10px;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .links a + a {
+        margin-top: 10px; 
+    }
+}
