@@ -67,7 +67,7 @@ p {
 .links a:hover {
     background-color: #fff; 
     color: #3f4e62; 
-    border: 2px solid #396480; 
+    border: 2px solid #396480;
 }
 
 @media (max-width: 430px) {
@@ -85,4 +85,29 @@ p {
     .links a + a {
         margin-top: 10px; 
     }
+}
+
+@media (max-width: 390px) {
+    p {
+        font-size: 23px;
+    }
+    .logo {
+        width: 100%;
+        height: auto;
+    }
+    .links {
+        margin-top: 35px;
+        margin-bottom: 10px;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .links a + a {
+        margin-top: 10px; 
+    }
+}
+
+.blinking-face {
+    writing-mode: vertical-rl;
+    transform: translateY(3px);
 }
