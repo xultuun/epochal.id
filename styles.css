@@ -3,6 +3,12 @@
     src: url('assets/Nexa Light.otf') format('truetype');
 }
 
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 body {
     font-family: 'NexaL', Arial, sans-serif;
     margin-left: 25px;
@@ -13,7 +19,9 @@ body {
     align-items: center;
     flex-direction: column;
     min-height: 98.4vh;
-    background-image: linear-gradient(to bottom, #99d4f9, #C7E8FF);
+    background: linear-gradient(270deg, #99d4f9, #C7E8FF);
+    background-size: 400% 400%;
+    animation: backgroundAnimation 15s ease infinite;
 }
 
 .container {
